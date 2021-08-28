@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Clippy from "./components/clippy";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [clippyText, setClippyText] = useState('');
+
+    const onInputChange = (e) => {
+        setClippyText(e.target.value);
+    };
+
+    return (
+        <div className="App">
+            <input value={clippyText} onChange={(e) => onInputChange(e)} />
+            <Clippy speak={clippyText} character="Clippy" />
+        </div>
+      );
 }
 
 export default App;
