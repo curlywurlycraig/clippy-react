@@ -2,11 +2,15 @@
   width: 800px;
 }
 
-.wizard-panes {
+.contents {
   padding: 20px;
+}
+
+.wizard-panes {
   display: flex;
   flex-direction: row;
   height: 100%;
+  padding-bottom: 20px;
 }
 
 .image-well {
@@ -20,4 +24,18 @@
   object-position: 50% 50%;
   width: 250px;
   height: 600px;
+}
+
+.page-container {
+  padding: 0 20px;
+}
+
+.buttons {
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-button {
+  width: 100px;
 }

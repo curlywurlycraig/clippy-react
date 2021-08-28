@@ -37,6 +37,10 @@ const GlobalStyles = createGlobalStyle`
   input {
     font-family: 'ms_sans_serif';
   }
+  h1 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+  }
 `;
 
 const clippyMessage =
